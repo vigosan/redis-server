@@ -1,0 +1,13 @@
+default['redis-server']['package'] = 'redis-server'
+default['redis-server']['port'] = '6379'
+default['redis-server']['bind'] = '127.0.0.1'
+default['redis-server']['loglevel'] = 'notice'
+default['redis-server']['databases'] = 16
+default['redis-server']['save'] = ['900 1', '300 10', '60 10000']
+default['redis-server']['rdbcompression'] = 'yes'
+default['redis-server']['dbfilename'] = 'dump.rdb'
+default['redis-server']['dir'] = '/etc/redis/'
+default['redis-server']['appendonly'] = 'no'
+default['redis-server']['additional_configuration_values'] = {}
+default['redis-server']['use_ppa'] = true
+default['redis-server']['ppa'] = 'ppa:chris-lea/redis-server'
